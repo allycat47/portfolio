@@ -3535,6 +3535,9 @@ html {
         box-shadow: 0 0 1rem rgba(0,0,0,0.25);
         z-index: 10;
     }
+    .top__box__headline__info {
+        max-height: 0;
+    }
     .c-flex-reverse-row .box-resume__holder {
         align-items: flex-end;
     }
