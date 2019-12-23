@@ -3500,6 +3500,23 @@ html {
     .box-top__box {
         height: 400px;
     }
+    .box-top__box:hover {
+        box-shadow: 0 0 1rem rgba(0,0,0,0.25);
+        z-index: 9;
+    }
+    .c-flex-reverse-row .box-resume__holder {
+        align-items: flex-end;
+    }
+    .box-resume__holder__text {
+        margin-left: -4rem;
+        max-width: 450px;
+    }
+    .c-flex-reverse-row .box-resume__holder__text {
+        margin-right: -4rem;
+    }
+    .box-resume .box-resume__img {
+        min-height: 400px;
+    }
 }
 @media screen and (min-width: 992px) {
     .box-top__box {
