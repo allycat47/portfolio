@@ -3515,9 +3515,13 @@ html {
     position: relative;
     z-index: 10;
 }
+.box-contact__img {
+    position: relative;
+    z-index: 5;
+}
 .box-contact__info .c-lead {
     position: relative;
-    padding-left: 50px;
+    padding-left: 65px;
 }
 .box-contact__info .c-lead:before {
     position: absolute;
@@ -3528,6 +3532,7 @@ html {
     background: #02376a;
     top: calc(50% - 25px);
     left: 0;
+    z-index: 11;
 }
 
 @media screen and (min-width: 768px) {
@@ -3547,6 +3552,13 @@ html {
     .c-flex-reverse-row .box-resume__holder {
         align-items: flex-end;
     }
+    .box-resume__img {
+        margin-right: -4rem;
+    }
+    .c-flex-reverse-row .box-resume__img {
+        margin-left: -4rem;
+        margin-right: auto;
+    }
     .box-resume__holder__text {
         margin-left: -4rem;
         width: 450px;
@@ -3554,6 +3566,7 @@ html {
     }
     .c-flex-reverse-row .box-resume__holder__text {
         margin-right: -4rem;
+        margin-left: auto;
     }
     .box-resume .box-resume__img {
         min-height: 400px;
@@ -3578,12 +3591,15 @@ html {
         margin-top: 2rem;
     }
     .box-extras__box-headline {
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
     }
     .box-extras__box-interests {
         margin-top: -2rem;
         position: relative;
         z-index: 9;
+    }
+    .box-extras__img-1 {
+        margin-top: -2rem;
     }
     .box-extras__img-2 {
         margin-bottom: -4rem;
@@ -3597,5 +3613,6 @@ html {
 @media screen and (max-width: 992px) {
     .box-extras__img-1 {
         display: none;
+        margin: 0;
     }
 }
