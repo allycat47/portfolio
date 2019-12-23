@@ -3498,6 +3498,24 @@ html {
     left: calc(50% - 30px);
     top: -30px;
 }
+.box-about__main {
+    position: relative;
+    z-index: 10;
+}
+.box-contact__info {
+    position: relative;
+    padding-left: 50px;
+}
+.box-contact__info:before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #02376a;
+    top: calc(50% - 25px);
+    left: -4rem;
+}
 
 @media screen and (min-width: 768px) {
     .box-top__box {
