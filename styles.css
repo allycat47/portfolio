@@ -3484,6 +3484,9 @@ html {
 }
 
 /*-- CUSTOM STYLING --*/
+.box-top__box {
+    height: 300px;
+}
 .box-main-headline h1 {
     line-height: 1;
     padding-top: 0.75rem;
@@ -3538,6 +3541,9 @@ html {
     .top__box__headline__info {
         max-height: 0;
     }
+    .box-resume h2 {
+        text-align: right;
+    }
     .c-flex-reverse-row .box-resume__holder {
         align-items: flex-end;
     }
@@ -3560,5 +3566,15 @@ html {
 @media screen and (min-width: 992px) {
     .box-top__box {
         height: 500px;
+    }
+    .box-extras__box-headline ,
+    .box-extras__box-skills{
+        margin-top: 2rem;
+    }
+    .box-extras__box-interests {
+        margin-top: -2rem;
+    }
+    .box-extras__img-2 {
+        margin-bottom: -2rem;
     }
 }
