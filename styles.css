@@ -3527,7 +3527,7 @@ html {
     border-radius: 50%;
     background: #02376a;
     top: calc(50% - 25px);
-    left: -5rem;
+    left: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -3562,6 +3562,12 @@ html {
         writing-mode: vertical-lr;
         text-orientation: sideways-right;
     }
+    .box-contact__info .c-lead {
+        padding-left: 10px;
+    }
+    .box-contact__info .c-lead:before {
+        left: -5rem;
+    }
 }
 @media screen and (min-width: 992px) {
     .box-top__box {
@@ -3573,6 +3579,10 @@ html {
     }
     .box-extras__box-interests {
         margin-top: -2rem;
+    }
+    .box-extras__img-1 {
+        position: relative;
+        z-index: 9;
     }
     .box-extras__img-2 {
         margin-bottom: -2rem;
