@@ -7,32 +7,44 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <section class="c-p-1 c-main-bg c-text-light c-text-center">
+        <section class="c-p-1 c-main-bg c-text-light c-text-center box-main-headline">
             <h1 class="c-display-e c-script-font">Alex McFarland</h1>
         </section>
         <section class="c-flex-container c-flex-center c-flex-v-end c-text-center c-text-light box-top">
             <a href="#about" class="c-pt-7 c-grid-12 c-grid-md-6 c-grid-lg-3 c-bg-image c-overlay-dark-heavy c-overlay-to-dark-subtle c-undecoration box-top__box" style="background-image: url('images/blue-girl.jpg');">
-                <div class="c-p-1 c-main-bg top__box__headline">
+                <div class="c-p-1 c-main-bg top__box__headline js-top__headline__headline">
                     <p class="c-main-font h4">About Me</p>
+                    <div class="c-pt-1 top__box__headline__info js-top__headline__info">
+                        <p>Want to know a little more about me?</p>
+                    </div>
                 </div>
             </a>
             <a href="#resume" class="c-pt-7 c-grid-12 c-grid-md-6 c-grid-lg-3 c-bg-image c-overlay-dark-heavy c-overlay-to-dark-subtle c-undecoration box-top__box" style="background-image: url('images/website-code.jpg');">
                 <div class="c-p-1 c-main-bg top__box__headline">
                     <p class="c-main-font h4">Resume</p>
+                    <div class="c-pt-1 top__box__headline__info js__headline__info">
+                        <p>I could <em>tell</em> you all about me, but I'd rather <em>show</em> you instead.</p>
+                    </div>
                 </div>
             </a>
             <a href="#extras" class="c-pt-7 c-grid-12 c-grid-md-6 c-grid-lg-3 c-bg-image c-overlay-dark-heavy c-overlay-to-dark-subtle c-undecoration box-top__box" style="background-image: url('images/ice-hockey-player.jpg'); background-position: right;">
                 <div class="c-p-1 c-main-bg top__box__headline">
                     <p class="c-main-font h4">Extras</p>
+                    <div class="c-pt-1 top__box__headline__info js__headline__info">
+                        <p>Here's a little something about my skills and hobbies.</p>
+                    </div>
                 </div>
             </a>
             <a href="#contact" class="c-pt-7 c-grid-12 c-grid-md-6 c-grid-lg-3 c-bg-image c-overlay-dark-heavy c-overlay-to-dark-subtle c-undecoration box-top__box" style="background-image: url('images/sedona-red.jpg');">
                 <div class="c-p-1 c-main-bg top__box__headline">
                     <p class="c-main-font h4">Contact</p>
+                    <div class="c-pt-1 top__box__headline__info js__headline__info">
+                        <p>Get in touch with me! (Warning: least interesting section of my site.)</p>
+                    </div>
                 </div>
             </a>
         </section>
-        <section id="about" class="c-py-6 c-px-1 c-contain-xl box-about">
+        <section id="about" class="c-py-6 c-px-1 c-contain-lg box-about">
             <div class="c-flex-container c-flex-v-center c-flex-center box-about">
                 <div class="c-py-7 c-px-3 c-grid-12 c-grid-md-8 c-grid-lg-7 c-box-shadow-md box-about__main">
                     <h2 class="c-display-c">About</h2>
@@ -54,7 +66,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </section>
         <section id="resume" class="c-py-4 c-px-1 c-contain-xxl box-resume">
@@ -137,7 +149,7 @@
                 </div>
             </div>
         </section>
-        
+
         <section class="c-py-7">
             <hr class="c-contain-xs" />
         </section>
@@ -149,5 +161,67 @@
                 <p class="c-lead"><strong>Email: </strong><a href="mailto:acgouveia5@gmail.com">acgouveia5@gmail.com</a></p>
             </div>
         </section>
+        <script type="text/javascript">
+
+            //whole box clickable
+            [].forEach.call(document.querySelectorAll('.js__wbc'), function(el) {
+                el.addEventListener('click', function() {
+                    window.location = el.querySelector('a').getAttribute('href');
+                    return false;
+                });
+            });
+
+            //resource hovers
+            var resources = document.getElementsByClassName('js-top__headline');
+
+            var timeout = false; // holder for timeout id
+            var delay = 240;
+
+            function resourceHovers() {
+
+                //if resource hover should be available
+                Array.prototype.forEach.call(resources, function (resource) {
+                    var description = resource.querySelector(".js-top__headline__info");
+                    var sectionHeight = description.scrollHeight;
+
+                    //display description
+                    function toggleHeightUp() {
+                        description.style.maxHeight = sectionHeight + 'px';
+                    }
+
+                    //hide description
+                    function toggleHeightDown() {
+                        description.style.maxHeight = null;
+                    }
+
+                    function checkMatchMedia() {
+                        //check window size
+                        if (window.matchMedia("(min-width: 1200px)").matches) {
+
+                            resource.addEventListener('mouseenter', toggleHeightUp, false);
+                            resource.addEventListener('mouseleave', toggleHeightDown, false);
+
+                        } else {
+                            resource.removeEventListener('mouseenter', toggleHeightUp, false);
+                            resource.removeEventListener('mouseleave', toggleHeightDown, false);
+
+                        }
+                    }
+                    checkMatchMedia();
+                    window.addEventListener("resize", checkMatchMedia, false);
+                });
+            }
+
+            resourceHovers();
+
+            //debouncing resourceHovers on resize
+            window.addEventListener("resize", function() {
+                // clear the timeout
+                clearTimeout(timeout);
+
+                // start timing for event "completion"
+                timeout = setTimeout(resourceHovers, delay);
+            }, false);
+        </script>
     </body>
 </html>
