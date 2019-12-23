@@ -3480,4 +3480,29 @@ html {
     float: none;
 }
 
-/*-- 4 - [Typography] --*/
+/*-- CUSTOM STYLING --*/
+.top__box__headline {
+    position: relative;
+}
+.top__box__headline:before {
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 40px solid #02376a;
+    left: calc(50% - 40px);
+    top: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .box-top__box {
+        height: 400px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .box-top__box {
+        height: 500px;
+    }
+}
