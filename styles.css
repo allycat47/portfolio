@@ -44,7 +44,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     margin: 0 0 0.5rem;
     padding: 0;
     color: #57595b;
-    font-family: 'Roboto',Verdana,Geneva,'Bitstream Vera Sans','DejaVu Sans',sans-serif;
+    font-family: 'Lora',Geneva,'Times New Roman', serif;
 }
 p {
     margin: 0 0 1rem;
@@ -115,10 +115,13 @@ h6, .h6 {
 }
 .primary-font, .c-primary-font, .c-main-font,
 body, input, select, textarea, button {
-    font-family: 'Roboto',Verdana,Geneva,'Bitstream Vera Sans','DejaVu Sans',sans-serif;
+    font-family: 'Nunito',Verdana,Geneva,'Bitstream Vera Sans','DejaVu Sans',sans-serif;
 }
 .accent-font, .c-accent-font {
-    font-family: 'Roboto',Verdana,Geneva,'Bitstream Vera Sans','DejaVu Sans',sans-serif;
+    font-family: 'Lora',Geneva,'Times New Roman', serif;
+}
+.c-script-font {
+    font-family: 'Great Vibes', script;
 }
 
 @media screen and (min-width: 768px) {
@@ -1822,7 +1825,7 @@ body, iframe, form{
     .c-overlay-light-t-md:after {
         background: linear-gradient(180deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.7) 50%, rgba(255,255,255,0) 100%);
     }
-    
+
 }
 
 @media (min-width: 992px) { /* lg */
@@ -3068,7 +3071,7 @@ div[class*='c-buttons-'] ol {
 }
 .c-buttons-accent,
 .c-button-accent {
-    font-family: 'Roboto',Verdana,Geneva,'Bitstream Vera Sans','DejaVu Sans',sans-serif;
+    font-family: 'Lora',Geneva,'Times New Roman', serif;
 }
 .c-buttons-bold,
 .c-button-bold {
@@ -3478,5 +3481,3 @@ html {
 }
 
 /*-- 4 - [Typography] --*/
-
-
