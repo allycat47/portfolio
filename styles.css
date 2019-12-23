@@ -3502,11 +3502,11 @@ html {
     position: relative;
     z-index: 10;
 }
-.box-contact__info {
+.box-contact__info .c-lead {
     position: relative;
     padding-left: 50px;
 }
-.box-contact__info:before {
+.box-contact__info .c-lead:before {
     position: absolute;
     content: "";
     width: 50px;
@@ -3514,7 +3514,7 @@ html {
     border-radius: 50%;
     background: #02376a;
     top: calc(50% - 25px);
-    left: -4rem;
+    left: -5rem;
 }
 
 @media screen and (min-width: 768px) {
