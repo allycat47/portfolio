@@ -3608,6 +3608,30 @@ html {
         box-shadow: 0 5px 1rem rgba(0,0,0,0.15);
         margin-bottom: 1rem;
     }
+    /* Animations */
+    .box-about__main {
+        transition: all 0.5s ease-in-out;
+    }
+    .box-about__img__img {
+        transition: all 1s ease-in-out;
+    }
+    .box-about__img__txt {
+        transition: all 1.5s ease-in-out;
+    }
+    .box-about__main,
+    .box-about__img__img,
+    ..box-about__img__txt {
+        opacity: 0.05;
+      -webkit-transform: translate3d(0, 50%, 0);
+      transform: translate3d(0, 50%, 0);
+    }
+    .box-about__main,
+    .box-about__img__img,
+    ..box-about__img__txt {
+        opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
 }
 
 @media screen and (max-width: 992px) {
