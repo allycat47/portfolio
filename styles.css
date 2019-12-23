@@ -3509,7 +3509,8 @@ html {
     }
     .box-resume__holder__text {
         margin-left: -4rem;
-        max-width: 450px;
+        width: 450px;
+        max-width: 100%;
     }
     .c-flex-reverse-row .box-resume__holder__text {
         margin-right: -4rem;
