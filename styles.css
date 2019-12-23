@@ -3489,11 +3489,11 @@ html {
     content: "";
     height: 0;
     width: 0;
-    border-left: 40px solid transparent;
-    border-right: 40px solid transparent;
-    border-top: 40px solid #02376a;
-    left: calc(50% - 40px);
-    top: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #02376a;
+    left: calc(50% - 30px);
+    top: -30px;
 }
 
 @media screen and (min-width: 768px) {
