@@ -3484,6 +3484,11 @@ html {
 }
 
 /*-- CUSTOM STYLING --*/
+.box-main-headline h1 {
+    line-height: 1;
+    padding-top: 0.75rem;
+    margin: 0;
+}
 .top__box__headline {
     position: relative;
 }
@@ -3498,6 +3503,11 @@ html {
     left: calc(50% - 30px);
     top: -30px;
 }
+.top__box__headline__info {
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+}
+
 .box-about__main {
     position: relative;
     z-index: 10;
