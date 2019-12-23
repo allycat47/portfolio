@@ -3609,25 +3609,31 @@ html {
         margin-bottom: 1rem;
     }
     /* Animations */
-    .box-about__main {
-        transition: all 0.5s ease-in-out;
-    }
-    .box-about__img__img {
+    .box-about__main,
+    .box-resume__img {
         transition: all 1s ease-in-out;
     }
-    .box-about__img__txt {
+    .box-about__img__img,
+    .box-resume__txt {
         transition: all 1.5s ease-in-out;
+    }
+    .box-about__img__txt {
+        transition: all 1.75s ease-in-out;
     }
     .box-about__main,
     .box-about__img__img,
-    .box-about__img__txt {
+    .box-about__img__txt,
+    .box-resume__img,
+    .box-resume__txt {
         opacity: 0.05;
       -webkit-transform: translate3d(0, 50%, 0);
       transform: translate3d(0, 50%, 0);
     }
     .is-visible .box-about__main,
     .is-visible .box-about__img__img,
-    .is-visible .box-about__img__txt {
+    .is-visible .box-about__img__txt,
+    .box-resume__img,
+    .box-resume__txt {
         opacity: 1;
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
