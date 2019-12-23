@@ -3588,4 +3588,14 @@ html {
     .box-extras__img-2 {
         margin-bottom: -4rem;
     }
+    .box-extras__addl {
+        box-shadow: 0 5px 1rem rgba(0,0,0,0.15);
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .box-extras__img-1 {
+        display: none;
+    }
 }
