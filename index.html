@@ -32,30 +32,32 @@
                 </div>
             </a>
         </section>
-        <section id="about" class="c-py-6 c-px-1 box-about">
+        <section id="about" class="c-py-6 c-px-1 c-contain-xl box-about">
             <div class="c-flex-container c-flex-v-center c-flex-center box-about">
                 <div class="c-py-7 c-px-3 c-grid-12 c-grid-md-8 c-grid-lg-7 c-box-shadow-md box-about__main">
                     <h2 class="c-display-c">About</h2>
                     <p>Hey there! Name's Alex. I'm a writer and front-end web developer who also dabbles in web design. I graduated from the University of Rhode Island in 2011 with a bachelor's in Writing and Rhetoric and have spend my days since then honing my writing skills and teaching myself web development and design. Currently, I work as a copywriter and web developer for a real estate marketing company.</p>
                 </div>
-                <div class="c-py-3 c-grid-12 c-grid-lg-5 c-flex-container c-flex-column box-about__img">
-                    <div class="c-grid-12 c-grid-md-6 c-grid-lg-12 c-bg-image" style="height:300px; background-image: url('images/blue-girl.jpg');"></div>
-                    <div class="c-grid-12 c-grid-md-6 c-grid-lg-12 c-p-2 c-light-bg">
-                        <h3>Education</h3>
-                        <ul>
-                            <li>University of Rhode Island</li>
+                <div class="c-py-3 c-grid-12 c-grid-lg-5 box-about__img">
+                    <div class="c-flex-container c-flex-center">
+                        <div class="c-grid-12 c-grid-md-6 c-grid-lg-12 c-bg-image" style="height:300px; background-image: url('images/blue-girl.jpg');"></div>
+                        <div class="c-grid-12 c-grid-md-6 c-grid-lg-12 c-p-2 c-light-bg">
+                            <h3>Education</h3>
                             <ul>
-                                <li>Graduated: May 2011</li>
-                                <li>Bachelor of Arts: Writing and Rhetoric</li>
-                                <li>GPA: 3.7</li>
+                                <li>University of Rhode Island</li>
+                                <ul>
+                                    <li>Graduated: May 2011</li>
+                                    <li>Bachelor of Arts: Writing and Rhetoric</li>
+                                    <li>GPA: 3.7</li>
+                                </ul>
                             </ul>
-                        </ul>
+                        </div>
                     </div>
                 </div>
                 
             </div>
         </section>
-        <section id="resume" class="c-py-4 c-px-1 box-resume">
+        <section id="resume" class="c-py-4 c-px-1 c-contain-xxl box-resume">
             <div class="c-px-1 c-contain-md">
                 <h2 class="c-display-c">Resume</h2>
             </div>
@@ -99,7 +101,7 @@
                 </div>
             </div>
         </section>
-        <section id="extras" class="c-py-7 box-extras">
+        <section id="extras" class="c-py-2 box-extras">
             <div class="c-flex-container c-flex-center">
                 <div class="c-py-3 c-px-2 c-grid-12 c-grid-md-6 c-grid-lg-3 c-light-bg box-extras__box box-extras__box-headline">
                     <h2 class="c-display-e">Extras</h2>
@@ -108,19 +110,29 @@
                     <div class="c-grid-12 c-grid-md-6 c-grid-lg-3 c-box-shadow-md-dark c-bg-image"></div>
                     <div class="c-py-5 c-px-2 c-grid-12 c-grid-md-6 c-grid-lg-9 c-light-bg">
                         <h3>Skills</h3>
-                        <p>Text about such and things and whatnot</p>
+                        <ul>
+                            <li>HTML, CSS, Javascript, Smarty</li>
+                            <li>APA & MLA formatting & grammar</li>
+                            <li>Wordpress, CMS</li>
+                            <li>Git, GitHub, Git Flow</li>
+                        </ul>
                     </div>
                     <div class="c-py-5 c-px-2 c-grid-12 c-grid-md-6 c-grid-lg-4">
                         <h3>Interests</h3>
                         <ul>
-                            <li>Thing</li>
-                            <li>Thing</li>
+                            <li>Hiking</li>
+                            <li>Ice hockey</li>
+                            <li>Weightlifting</li>
+                            <li>Reading & writing</li>
                         </ul>
                     </div>
                     <div class="c-grid-12 c-grid-md-6 c-grid-lg-4 c-box-shadow-md-dark c-bg-image"></div>
                     <div class="c-py-5 c-px-2 c-grid-12 c-grid-md-6 c-grid-lg-4">
                         <h3>Additional Thangs</h3>
-                        <p>More stuff here</p>
+                        <ul>
+                            <li>Mildy obsessed with grammar</li>
+                            <li>Sometimes dreams in code</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -129,12 +141,12 @@
         <section class="c-py-7">
             <hr class="c-contain-xs" />
         </section>
-        <section id="contact" class="c-flex-container c-flex-center">
-            <div class="c-grid-12 c-grid-md-6 c-bg-image"  style="background-image: url('images/sedona-red.jpg')"></div>
-            <div class="c-py-6 c-px-3 c-grid-md-6 c-light-bg">
+        <section id="contact" class="c-flex-container c-flex-center box-contact">
+            <div class="c-grid-12 c-grid-md-6 c-bg-image" style="background-image: url('images/sedona-red.jpg')"></div>
+            <div class="c-py-6 c-px-3 c-grid-md-6 c-light-bg box-contact__info">
                 <h2 class="c-display-d">Contact</h2>
-                <p>Phone: </p>
-                <p>Email: </p>
+                <p class="c-lead"><strong>Phone: </strong><a href="tel:401-742-9194">(401)741-9194</a></p>
+                <p class="c-lead"><strong>Email: </strong><a href="mailto:acgouveia5@gmail.com">acgouveia5@gmail.com</a></p>
             </div>
         </section>
     </body>
