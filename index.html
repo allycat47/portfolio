@@ -12,33 +12,33 @@
         </section>
         <section class="c-flex-container c-flex-center c-flex-v-end c-text-center c-text-light box-top">
             <a href="#about" class="c-pt-7 c-grid-12 c-grid-md-6 c-grid-lg-3 c-bg-image c-overlay-dark-heavy c-overlay-to-dark-subtle c-undecoration box-top__box" style="background-image: url('images/blue-girl.jpg');">
-                <div class="c-p-1 c-main-bg top__box__headline js-top__headline__headline">
+                <div class="c-p-1 c-main-bg top__box__headline js-top__headline">
                     <p class="c-main-font h4">About Me</p>
-                    <div class="c-pt-1 top__box__headline__info js-top__headline__info">
+                    <div class="top__box__headline__info js-top__headline__info">
                         <p>Want to know a little more about me?</p>
                     </div>
                 </div>
             </a>
             <a href="#resume" class="c-pt-7 c-grid-12 c-grid-md-6 c-grid-lg-3 c-bg-image c-overlay-dark-heavy c-overlay-to-dark-subtle c-undecoration box-top__box" style="background-image: url('images/website-code.jpg');">
-                <div class="c-p-1 c-main-bg top__box__headline">
+                <div class="c-p-1 c-main-bg top__box__headline js-top__headline">
                     <p class="c-main-font h4">Resume</p>
-                    <div class="c-pt-1 top__box__headline__info js__headline__info">
+                    <div class="top__box__headline__info js__headline__info">
                         <p>I could <em>tell</em> you all about me, but I'd rather <em>show</em> you instead.</p>
                     </div>
                 </div>
             </a>
             <a href="#extras" class="c-pt-7 c-grid-12 c-grid-md-6 c-grid-lg-3 c-bg-image c-overlay-dark-heavy c-overlay-to-dark-subtle c-undecoration box-top__box" style="background-image: url('images/ice-hockey-player.jpg'); background-position: right;">
-                <div class="c-p-1 c-main-bg top__box__headline">
+                <div class="c-p-1 c-main-bg top__box__headline js-top__headline">
                     <p class="c-main-font h4">Extras</p>
-                    <div class="c-pt-1 top__box__headline__info js__headline__info">
+                    <div class="top__box__headline__info js__headline__info">
                         <p>Here's a little something about my skills and hobbies.</p>
                     </div>
                 </div>
             </a>
             <a href="#contact" class="c-pt-7 c-grid-12 c-grid-md-6 c-grid-lg-3 c-bg-image c-overlay-dark-heavy c-overlay-to-dark-subtle c-undecoration box-top__box" style="background-image: url('images/sedona-red.jpg');">
-                <div class="c-p-1 c-main-bg top__box__headline">
+                <div class="c-p-1 c-main-bg top__box__headline js-top__headline">
                     <p class="c-main-font h4">Contact</p>
-                    <div class="c-pt-1 top__box__headline__info js__headline__info">
+                    <div class="top__box__headline__info js__headline__info">
                         <p>Get in touch with me! (Warning: least interesting section of my site.)</p>
                     </div>
                 </div>
@@ -182,6 +182,7 @@
                 //if resource hover should be available
                 Array.prototype.forEach.call(resources, function (resource) {
                     var description = resource.querySelector(".js-top__headline__info");
+                    console.log(description);
                     var sectionHeight = description.scrollHeight;
 
                     //display description
