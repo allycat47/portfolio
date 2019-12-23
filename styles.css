@@ -3573,14 +3573,15 @@ html {
     .box-top__box {
         height: 500px;
     }
-    .box-extras__box-headline ,
+    .box-extras__box-headline,
     .box-extras__box-skills{
         margin-top: 2rem;
     }
+    .box-extras__box-headline {
+        margin-bottom: 2rem;
+    }
     .box-extras__box-interests {
         margin-top: -2rem;
-    }
-    .box-extras__img-1 {
         position: relative;
         z-index: 9;
     }
