@@ -3620,14 +3620,14 @@ html {
     }
     .box-about__main,
     .box-about__img__img,
-    ..box-about__img__txt {
+    .box-about__img__txt {
         opacity: 0.05;
       -webkit-transform: translate3d(0, 50%, 0);
       transform: translate3d(0, 50%, 0);
     }
     .box-about__main,
     .box-about__img__img,
-    ..box-about__img__txt {
+    .box-about__img__txt {
         opacity: 1;
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
