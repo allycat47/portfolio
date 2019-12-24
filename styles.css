@@ -3632,8 +3632,8 @@ html {
     .is-visible .box-about__main,
     .is-visible .box-about__img__img,
     .is-visible .box-about__img__txt,
-    .box-resume__img,
-    .box-resume__txt {
+    .is-visible .box-resume__img,
+    .is-visible .box-resume__txt {
         opacity: 1;
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
