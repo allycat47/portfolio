@@ -244,9 +244,9 @@
 
 
             var menuBar = document.querySelector('.menu-bar');
-            var menuLinkHolder = document.querySelectorAll('.menu-bar li');
-            var menuLinks = document.querySelectorAll('.menu-bar li a');
+            var menuLinks = document.querySelectorAll('.menu-bar li');
             var headerBox = document.querySelector('.first-link a');
+            var firstLink = document.querySelectorAll('.menu-bar .first-link');
             var linkHeight = menuLinkHolder.scrollHeight;
 
             menuBar.addEventListener('click', function(e) {
@@ -269,12 +269,13 @@
                     })
                     link.classList.add('is-active');
                     link.style.maxHeight = sectionHeight + 'px';
-                    
+
                     var newHeader = link.innerHTML;
                     headerBox.innerHTML = newHeader;
                 });
             });
-            
+            firstLink.style.maxHeight = sectionHeight + 'px';
+
 
             //resource hovers
             var resources = document.getElementsByClassName('js-top__box');
