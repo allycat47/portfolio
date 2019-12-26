@@ -245,7 +245,6 @@
 
             var menuBar = document.querySelector('.menu-bar');
             var menuLinks = document.querySelectorAll('.menu-bar li a');
-            var headerBox = document.querySelector('.first-link a');
             var firstLink = document.querySelector('.menu-bar .first-link');
             var linkHeight = menuLinks.scrollHeight;
 
@@ -255,9 +254,11 @@
             });
             window.addEventListener('resize', function(){
                 menuBar.classList.remove('opened');
+                firstLink.style.maxHeight = linkHeight + 'px';
             });
             window.addEventListener('load', function(){
                 menuBar.classList.remove('opened');
+                firstLink.style.maxHeight = linkHeight + 'px';
             });
 
             Array.prototype.forEach.call( menuLinks, function( link ) {
@@ -267,12 +268,8 @@
                         deadlinks.parentNode.style.maxHeight = null;
                     })
                     link.parentNode.style.maxHeight = linkHeight + 'px';
-
-                    var newHeader = link.innerHTML;
-                    headerBox.innerHTML = newHeader;
                 });
             });
-            firstLink.style.maxHeight = linkHeight + 'px';
 
 
             //resource hovers
