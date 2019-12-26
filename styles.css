@@ -3485,7 +3485,7 @@ html {
 
 /*-- CUSTOM STYLING --*/
 .box-top__box {
-    height: 250px;
+    min-height: 250px;
 }
 .box-main-headline h1 {
     line-height: 1;
@@ -3502,9 +3502,9 @@ html {
     width: 0;
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
-    border-top: 30px solid #02376a;
+    border-bottom: 30px solid #02376a;
     left: calc(50% - 30px);
-    bottom: -30px;
+    top: -30px;
 }
 .top__box__headline__info {
     overflow: hidden;
@@ -3583,9 +3583,6 @@ html {
     }
 }
 @media screen and (min-width: 992px) {
-    .box-top__box {
-        min-height: 400px;
-    }
     .box-extras__box-headline,
     .box-extras__box-skills{
         margin-top: 2rem;
