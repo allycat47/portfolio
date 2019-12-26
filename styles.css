@@ -3484,7 +3484,7 @@ html {
 }
 
 /*-- CUSTOM STYLING --*/
-.box-top__box {
+.box-top .box-top__box {
     min-height: 250px;
 }
 .box-main-headline h1 {
@@ -3544,7 +3544,7 @@ html {
 }
 
 @media screen and (min-width: 768px) {
-    .box-top__box {
+    .box-top .box-top__box {
         min-height: 300px;
     }
     /*.box-top__box:hover {
