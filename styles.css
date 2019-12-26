@@ -3610,19 +3610,32 @@ html {
     }
     /* Animations */
     .box-about__main,
-    .box-resume__img {
+    .box-resume__img,
+    .box-resume__holder,
+    .box-extras__box-headline {
         transition: all 1s ease-in-out;
     }
+    .box-extras__img {
+        transition: all 1.25s ease-in-out;
+    }
     .box-about__img__img,
-    .box-resume__holder {
+    .box-extras__box-skills {
         transition: all 1.5s ease-in-out;
     }
-    .box-about__img__txt {
+    .box-about__img__txt,
+    .box-extras__box-interests {
         transition: all 1.75s ease-in-out;
+    }
+    .box-extras__addl {
+        transition: all 2s ease-in-out;
     }
     .box-about__main,
     .box-about__img__img,
-    .box-about__img__txt {
+    .box-about__img__txt,
+    .box-extras__box-headline,
+    .box-extras__img,
+    .box-extras__box-interests,
+    .box-extras__addl {
         opacity: 0.05;
       -webkit-transform: translate3d(0, 50%, 0);
       transform: translate3d(0, 50%, 0);
@@ -3632,7 +3645,8 @@ html {
       -webkit-transform: translate3d(-50%, 0, 0);
       transform: translate3d(-50%, 0, 0);
     }
-    .box-resume__holder {
+    .box-resume__holder,
+    .box-extras__box-skills {
         opacity: 0.05;
       -webkit-transform: translate3d(50%, 0, 0);
       transform: translate3d(50%, 0, 0);
@@ -3651,7 +3665,12 @@ html {
     .is-visible .box-about__img__img,
     .is-visible .box-about__img__txt,
     .is-visible .box-resume__img,
-    .is-visible .box-resume__holder {
+    .is-visible .box-resume__holder,
+    .is-visible .box-extras__box-headline,
+    .is-visible .box-extras__img,
+    .is-visible .box-extras__box-skills,
+    .is-visible .box-extras__box-interests,
+    .is-visible .box-extras__addl {
         opacity: 1;
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
