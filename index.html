@@ -244,10 +244,9 @@
 
 
             var menuBar = document.querySelector('.menu-bar');
-            var menuLinks = document.querySelectorAll('.menu-bar li');
+            var menuLinks = document.querySelectorAll('.menu-bar li a');
             var headerBox = document.querySelector('.first-link a');
             var firstLink = document.querySelector('.menu-bar .first-link');
-            console.log(firstLink);
             var linkHeight = menuLinks.scrollHeight;
 
             menuBar.addEventListener('click', function(e) {
@@ -265,10 +264,8 @@
                 link.addEventListener('click', function(e) {
                     e.preventDefault;
                     Array.prototype.forEach.call( menuLinks, function( deadlinks ) {
-                        deadlinks.classList.remove('is-active');
                         deadlinks.style.maxHeight = null;
                     })
-                    link.classList.add('is-active');
                     link.style.maxHeight = linkHeight + 'px';
 
                     var newHeader = link.innerHTML;
