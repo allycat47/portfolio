@@ -3762,7 +3762,7 @@ html {
 }
 
 @media screen and (max-width: 768px) {
-    .c-sticky-nav ul li a {
+    .c-sticky-nav ul li {
         max-height: 0;
         overflow: hidden;
         transition: all 0.33s ease-in-out;
