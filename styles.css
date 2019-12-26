@@ -3622,12 +3622,30 @@ html {
     }
     .box-about__main,
     .box-about__img__img,
-    .box-about__img__txt,
-    .box-resume__img,
-    .box-resume__holder {
+    .box-about__img__txt {
         opacity: 0.05;
       -webkit-transform: translate3d(0, 50%, 0);
       transform: translate3d(0, 50%, 0);
+    }
+    .box-resume__img {
+        opacity: 0.05;
+      -webkit-transform: translate3d(-50%, 0, 0);
+      transform: translate3d(-50%, 0, 0);
+    }
+    .box-resume__holder {
+        opacity: 0.05;
+      -webkit-transform: translate3d(50%, 0, 0);
+      transform: translate3d(50%, 0, 0);
+    }
+    .c-flex-reverse-row .box-resume__holder {
+        opacity: 0.05;
+      -webkit-transform: translate3d(-50%, 0, 0);
+      transform: translate3d(-50%, 0, 0);
+    }
+    .c-flex-reverse-row .box-resume__img {
+        opacity: 0.05;
+      -webkit-transform: translate3d(50%, 0, 0);
+      transform: translate3d(50%, 0, 0);
     }
     .is-visible .box-about__main,
     .is-visible .box-about__img__img,
