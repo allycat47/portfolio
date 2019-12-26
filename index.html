@@ -246,7 +246,7 @@
             var menuBar = document.querySelector('.menu-bar');
             var menuLinks = document.querySelectorAll('.menu-bar li a');
             var firstLink = document.querySelector('.menu-bar .first-link');
-            var linkHeight = menuLinks.scrollHeight;
+            var linkHeight = firstLink.scrollHeight;
 
             menuBar.addEventListener('click', function(e) {
                 e.preventDefault;
