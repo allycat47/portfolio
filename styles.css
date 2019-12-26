@@ -3571,7 +3571,7 @@ html {
         max-width: 100%;
     }
     .c-flex-reverse-row .box-resume__holder__text {
-        margin-right: -4rem;
+        margin-right: -2rem;
         margin-left: auto;
     }
     .box-resume .box-resume__img {
@@ -3629,6 +3629,10 @@ html {
         margin-left: -4rem;
         width: 450px;
         max-width: 100%;
+    }
+    .c-flex-reverse-row .box-resume__holder__text {
+        margin-right: -4rem;
+        margin-left: auto;
     }
     .box-resume__holder {
         padding: 5rem 1rem;
@@ -3743,7 +3747,7 @@ html {
         display: none;
         margin: 0;
     }
-    .box-extras__box-interests {
+    .box-extras__box-skills {
         box-shadow: none;
     }
 }
