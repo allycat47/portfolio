@@ -261,7 +261,16 @@
                 firstLink.style.maxHeight = linkHeight + 'px';
             });
 
-
+            Array.prototype.forEach.call( menuLinks, function( link ) {
+                var thisLinkHeight = link.parentNode.scrollHeight;
+                link.addEventListener('click', function(e) {
+                    e.preventDefault;
+                    Array.prototype.forEach.call( menuLinks, function( deadlinks ) {
+                        deadlinks.parentNode.style.maxHeight = null;
+                    })
+                    link.parentNode.style.maxHeight = thisLinkHeight + 'px';
+                });
+            });
 
             //resource hovers
             var resources = document.getElementsByClassName('js-top__box');
