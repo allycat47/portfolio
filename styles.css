@@ -3591,6 +3591,19 @@ html {
     }
 }
 @media screen and (min-width: 992px) {
+    .box-top__box-1 {
+        margin-bottom: 3rem;
+    }
+    .box-top__box-2 {
+        margin-bottom: 5rem;
+        margin-top: 1rem;
+    }
+    .box-top__box-3 {
+        margin-bottom: 2rem;
+    }
+    .box-top__box-4 {
+        margin-top: 3rem;
+    }
     .box-extras__box-headline,
     .box-extras__box-skills{
         margin-top: 2rem;
