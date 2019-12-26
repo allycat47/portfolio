@@ -3539,10 +3539,10 @@ html {
     .box-top__box {
         height: 400px;
     }
-    //*.box-top__box:hover {
+    /*.box-top__box:hover {
         box-shadow: 0 0 1rem rgba(0,0,0,0.25);
         z-index: 10;
-    } *//
+    } */
     .top__box__headline__info {
         max-height: 0;
     }
