@@ -3485,7 +3485,7 @@ html {
 
 /*-- CUSTOM STYLING --*/
 .box-top .box-top__box {
-    min-height: 250px;
+    min-height: 200px;
 }
 .box-main-headline h1 {
     line-height: 1;
@@ -3500,28 +3500,19 @@ html {
 .box-top__box:hover .top__box__headline p {
     opacity: 1;
 }
-/*.top__box__headline {
-    position: relative;
-}
-.top__box__headline:before {
-    position: absolute;
-    content: "";
-    height: 0;
-    width: 0;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-bottom: 30px solid #02376a;
-    left: calc(50% - 30px);
-    top: -30px;
-} */
 .top__box__headline__info {
     overflow: hidden;
     transition: all 0.3s ease-out;
 }
-
 .box-about__main {
     position: relative;
     z-index: 10;
+}
+.box-resume .box-resume__img {
+    min-height: 250px;
+}
+.box-extras .box-extras__img {
+    min-height: 250px;
 }
 .box-contact__img {
     position: relative;
@@ -3544,9 +3535,6 @@ html {
 }
 
 @media screen and (min-width: 768px) {
-    .box-top .box-top__box {
-        min-height: 300px;
-    }
     .box-top__box:after {
         background: rgba(0,0,0,0.25);
     }
@@ -3565,6 +3553,9 @@ html {
     }
     .c-flex-reverse-row .box-resume__holder {
         align-items: flex-end;
+    }
+    .box-resume__holder {
+        padding: 5rem 0;
     }
     .box-resume__img {
         margin-right: -4rem;
@@ -3596,9 +3587,18 @@ html {
         left: -5rem;
     }
 }
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .box-about__img {
+        padding: 0;
+        margin-top: -1rem;
+    }
+}
 @media screen and (min-width: 992px) {
     .box-top {
         margin-top: -3rem;
+    }
+    .box-top .box-top__box {
+        min-height: 300px;
     }
     .box-top__box-1 {
         margin-bottom: 3rem;
@@ -3613,6 +3613,12 @@ html {
     }
     .box-top__box-4 {
         margin-top: 3rem;
+    }
+    .box-about__img {
+        padding: 3rem 0;
+    }
+    .box-resume__holder {
+        padding: 5rem 1rem;
     }
     .box-extras__box-headline,
     .box-extras__box-skills{
@@ -3723,5 +3729,8 @@ html {
     .box-extras__img-1 {
         display: none;
         margin: 0;
+    }
+    .box-extras__box-interests {
+        box-shadow: none;
     }
 }
