@@ -3515,8 +3515,6 @@ html {
     min-height: 250px;
 }
 .box-contact__img {
-    position: relative;
-    z-index: 5;
     min-height: 250px;
 }
 .box-contact__info .c-lead {
