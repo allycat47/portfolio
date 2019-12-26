@@ -1,2 +1,35 @@
-Make it like this but each one is a link and a brief description?
-https://www.yourcnyhome.com/meet-the-team
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Gupter|Nunito&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <title>Alex McFarland Writing Samples</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header class="c-p-1 c-main-bg c-text-light">
+            <div class="c-flex-container c-flex-v-center">
+                <div class="c-auto">
+                    <nav>
+                        <ul class="c-buttons c-buttons-auto c-buttons-clear-light">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="pages/coding.html">Coding</a></li>
+                            <li><a href="pages/writing.html">Writing</a></li>
+                            <li><a href="pages/resume.html">Resume</a></li>
+                            <li><a href="pages/contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="c-shrink box-main-headline">
+                    <h1 class="c-script-font">Alex McFarland</h1>
+                </div>
+            </div>
+
+        </header>
+        <footer>
+
+        </footer>
+
+    </body>
+</html>
+
