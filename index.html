@@ -264,9 +264,9 @@
                 link.addEventListener('click', function(e) {
                     e.preventDefault;
                     Array.prototype.forEach.call( menuLinks, function( deadlinks ) {
-                        deadlinks.style.maxHeight = null;
+                        deadlinks.parentNode.style.maxHeight = null;
                     })
-                    link.style.maxHeight = linkHeight + 'px';
+                    link.parentNode.style.maxHeight = linkHeight + 'px';
 
                     var newHeader = link.innerHTML;
                     headerBox.innerHTML = newHeader;
