@@ -3762,7 +3762,7 @@ html {
 }
 
 @media screen and (max-width: 768px) {
-    .c-sticky-nav ul li {
+    .c-sticky-nav ul li a {
         max-height: 0;
         overflow: hidden;
         transition: all 0.33s ease-in-out;
@@ -3791,10 +3791,6 @@ html {
     .c-sticky-nav ul.opened:after {
         top: 0;
         transform: rotate(180deg);
-    }
-    .menu-bar a {
-        font-size: 16px;
-        padding: 0.5rem;
     }
     .first-link a {
         padding: 1rem 0.5rem;
