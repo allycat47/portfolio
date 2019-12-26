@@ -3591,6 +3591,9 @@ html {
     }
 }
 @media screen and (min-width: 992px) {
+    .box-top {
+        margin-top: -3rem;
+    }
     .box-top__box-1 {
         margin-bottom: 3rem;
     }
