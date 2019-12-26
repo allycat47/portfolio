@@ -3517,6 +3517,7 @@ html {
 .box-contact__img {
     position: relative;
     z-index: 5;
+    min-height: 250px;
 }
 .box-contact__info .c-lead {
     position: relative;
@@ -3558,14 +3559,14 @@ html {
         padding: 5rem 0;
     }
     .box-resume__img {
-        margin-right: -4rem;
+        margin-right: -2rem;
     }
     .c-flex-reverse-row .box-resume__img {
-        margin-left: -4rem;
+        margin-left: -2rem;
         margin-right: auto;
     }
     .box-resume__holder__text {
-        margin-left: -4rem;
+        margin-left: -2rem;
         width: 450px;
         max-width: 100%;
     }
@@ -3616,6 +3617,18 @@ html {
     }
     .box-about__img {
         padding: 3rem 0;
+    }
+    .box-resume__img {
+        margin-right: -4rem;
+    }
+    .c-flex-reverse-row .box-resume__img {
+        margin-left: -4rem;
+        margin-right: auto;
+    }
+    .box-resume__holder__text {
+        margin-left: -4rem;
+        width: 450px;
+        max-width: 100%;
     }
     .box-resume__holder {
         padding: 5rem 1rem;
