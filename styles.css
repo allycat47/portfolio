@@ -3762,15 +3762,14 @@ html {
 }
 
 @media screen and (max-width: 768px) {
-    .c-sticky-nav ul li a {
+    .c-sticky-nav ul li {
         max-height: 0;
         overflow: hidden;
         transition: all 0.33s ease-in-out;
         width: 100%;
         padding: 0;
-    }
-    .c-sticky-nav ul li {
-        display: block;
+        display: block!important;
+        width: 100%!important;
     }
     .c-sticky-nav ul li a {
         text-align: left;
