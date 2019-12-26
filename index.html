@@ -9,7 +9,7 @@
     <body>
         <header class="c-p-1 c-alt-bg c-text-light c-sticky-nav js-nav">
             <div class="c-flex-container c-flex-v-center">
-                <div class="c-px-1 c-grid-12 -shrink-md box-main-headline">
+                <div class="c-px-1 c-grid-12 c-shrink-md box-main-headline">
                     <h1 class="c-script-font"><a href="index.html" class="c-undecoration">Alex McFarland</a></h1>
                 </div>
                 <div class="c-grid-12 c-auto-md">
@@ -244,8 +244,10 @@
 
 
             var menuBar = document.querySelector('.menu-bar');
+            var menuLinkHolder = document.querySelectorAll('.menu-bar li');
             var menuLinks = document.querySelectorAll('.menu-bar li a');
             var headerBox = document.querySelector('.first-link a');
+            var linkHeight = menuLinkHolder.scrollHeight;
 
             menuBar.addEventListener('click', function(e) {
                 e.preventDefault;
@@ -263,12 +265,16 @@
                     e.preventDefault;
                     Array.prototype.forEach.call( menuLinks, function( deadlinks ) {
                         deadlinks.classList.remove('is-active');
+                        deadlinks.style.maxHeight = null;
                     })
                     link.classList.add('is-active');
+                    link.style.maxHeight = sectionHeight + 'px';
+                    
                     var newHeader = link.innerHTML;
                     headerBox.innerHTML = newHeader;
                 });
             });
+            
 
             //resource hovers
             var resources = document.getElementsByClassName('js-top__box');
