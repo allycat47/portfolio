@@ -261,15 +261,6 @@
                 firstLink.style.maxHeight = linkHeight + 'px';
             });
 
-            Array.prototype.forEach.call( menuLinks, function( link ) {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault;
-                    Array.prototype.forEach.call( menuLinks, function( deadlinks ) {
-                        deadlinks.parentNode.style.maxHeight = null;
-                    })
-                    link.parentNode.style.maxHeight = linkHeight + 'px';
-                });
-            });
 
 
             //resource hovers
