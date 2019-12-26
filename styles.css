@@ -3762,7 +3762,7 @@ html {
 }
 
 @media screen and (max-width: 768px) {
-    .c-sticky-nav ul li {
+    .c-sticky-nav ul li a {
         max-height: 0;
         overflow: hidden;
         transition: all 0.33s ease-in-out;
@@ -3770,13 +3770,6 @@ html {
     }
     .c-sticky-nav ul li a {
         text-align: left;
-    }
-    .c-sticky-nav ul .first-link {
-        height: auto;
-    }
-    .c-sticky-nav ul.opened li {
-        height: auto;
-        width: 100%;
     }
     .c-sticky-nav ul {
         position: relative;
