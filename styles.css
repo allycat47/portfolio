@@ -3609,10 +3609,14 @@ html {
         margin-bottom: 1rem;
     }
     /* Animations */
+    .box-extras__box-headline {
+        transition: all 0.65s ease-in-out;
+    }
     .box-about__main,
     .box-resume__img,
     .box-resume__holder,
-    .box-extras__box-headline {
+    .box-contact__img,
+    .box-contact__info {
         transition: all 1s ease-in-out;
     }
     .box-extras__img {
@@ -3640,13 +3644,15 @@ html {
       -webkit-transform: translate3d(0, 50%, 0);
       transform: translate3d(0, 50%, 0);
     }
-    .box-resume__img {
+    .box-resume__img,
+    .box-contact__img {
         opacity: 0.05;
       -webkit-transform: translate3d(-50%, 0, 0);
       transform: translate3d(-50%, 0, 0);
     }
     .box-resume__holder,
-    .box-extras__box-skills {
+    .box-extras__box-skills,
+    .box-contact__info {
         opacity: 0.05;
       -webkit-transform: translate3d(50%, 0, 0);
       transform: translate3d(50%, 0, 0);
@@ -3670,7 +3676,9 @@ html {
     .is-visible .box-extras__img,
     .is-visible .box-extras__box-skills,
     .is-visible .box-extras__box-interests,
-    .is-visible .box-extras__addl {
+    .is-visible .box-extras__addl,
+    .is-visible .box-contact__img,
+    .is-visible .box-contact__info {
         opacity: 1;
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
