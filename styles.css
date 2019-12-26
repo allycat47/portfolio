@@ -3547,9 +3547,15 @@ html {
     .box-top .box-top__box {
         min-height: 300px;
     }
+    .box-top__box:after {
+        background: rgba(0,0,0,0.25);
+    }
     .box-top__box:hover {
-        box-shadow: 0 0 1rem rgba(0,0,0,0.45);
-        z-index: 10;
+        box-shadow: 0 0 1rem rgba(0,0,0,0.5);
+        z-index: 12;
+    }
+    .box-top__box:hover:after {
+        background: transparent;
     }
     .top__box__headline__info {
         max-height: 0;
