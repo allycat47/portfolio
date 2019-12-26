@@ -3482,7 +3482,15 @@ html {
     display: inline-block;
     float: none;
 }
-
+/* Sticky Nav */
+.c-sticky-nav.is-sticky {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  box-shadow: 0 0 2rem rgba(0,0,0,0.75);
+}
 /*-- CUSTOM STYLING --*/
 .box-top .box-top__box {
     min-height: 200px;
@@ -3534,6 +3542,9 @@ html {
 }
 
 @media screen and (min-width: 768px) {
+    .c-sticky-nav ul .first-link {
+        display: none;
+    }
     .box-top__box:after {
         background: rgba(0,0,0,0.25);
     }
@@ -3557,19 +3568,19 @@ html {
         padding: 5rem 0;
     }
     .box-resume__img {
-        margin-right: -2rem;
+        margin-right: -1.5rem;
     }
     .c-flex-reverse-row .box-resume__img {
-        margin-left: -2rem;
+        margin-left: -1.5rem;
         margin-right: auto;
     }
     .box-resume__holder__text {
-        margin-left: -2rem;
+        margin-left: -1.5rem;
         width: 450px;
         max-width: 100%;
     }
     .c-flex-reverse-row .box-resume__holder__text {
-        margin-right: -2rem;
+        margin-right: -1.5rem;
         margin-left: auto;
     }
     .box-resume .box-resume__img {
@@ -3747,5 +3758,50 @@ html {
     }
     .box-extras__box-skills {
         box-shadow: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .c-sticky-nav ul li {
+        height: 0;
+        overflow: hidden;
+        transition: all 0.33s ease-in-out;
+    }
+    .c-sticky-nav ul .first-link {
+        height: auto;
+    }
+    .c-sticky-nav ul.opened li {
+        height: auto;
+        width: 100%;
+    }
+    .c-sticky-nav ul {
+        position: relative;
+    }
+    .c-sticky-nav ul:after {
+        content: "";
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        right: 0;
+        top: calc(50% - 20px);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url('/icons/material/chevron-down/fff');
+        transition: transform 0.33s ease-in-out;
+    }
+    .c-sticky-nav ul.opened:after {
+        top: 0;
+        transform: rotate(180deg);
+    }
+    .menu-bar a {
+        font-size: 16px;
+        padding: 0.5rem;
+    }
+    .first-link a {
+        padding: 1rem 0.5rem;
+    }
+    .opened .first-link {
+        display: none;
     }
 }
