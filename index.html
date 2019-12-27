@@ -264,11 +264,12 @@
                 e.preventDefault;
                 menuBar.classList.toggle('opened');
                 if (menuBar.classList.contains("opened")) {
-                    removeLinkHeights();
-                    firstLink.style.maxHeight = linkHeight + 'px';
-                } else {
                     setLinkHeights();
                     firstLink.style.maxHeight = null;
+                } else {
+                    removeLinkHeights();
+                    firstLink.style.maxHeight = linkHeight + 'px';
+                    
                 }
             });
             window.addEventListener('resize', function(){
