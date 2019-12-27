@@ -3790,7 +3790,7 @@ html {
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        background-image: url('images/arrow-down.png');
+        background-image: url('images/chevron-down.svg');
         transition: transform 0.33s ease-in-out;
     }
     .c-sticky-nav ul.opened:after {
