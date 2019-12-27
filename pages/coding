@@ -1,1 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Gupter|Nunito|Dancing+Script&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <title>Alex McFarland Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header class="c-p-1 c-alt-bg c-text-light c-sticky-nav js-nav">
+            <div class="c-flex-container c-flex-v-center">
+                <div class="c-px-1 c-grid-12 c-shrink-md box-main-headline">
+                    <h1 class="c-script-font"><a href="index.html" class="c-undecoration">Alex McFarland</a></h1>
+                </div>
+                <div class="c-grid-12 c-auto-md">
+                    <nav>
+                        <ul class="c-buttons c-buttons-width-auto c-buttons-clear-light c-buttons-end c-buttons-uppercase menu-bar">
+                            <li class="first-link"><a href="#" class="dak-undecoration dak-block dak-p-1">Menu</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="pages/coding.html">Coding</a></li>
+                            <li><a href="pages/writing.html">Writing</a></li>
+                            <li><a href="pages/resume.html">Resume</a></li>
+                            <li><a href="pages/contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="js-sticky-next"></div>
+        <section class="c-py-7 c-px-1 c-text-center c-bg-image c-overlay-dark-heavy c-text-light" style="background-image: url('images/night-sky-stars.jpg')">
+            <div class="c-contain-md c-pb-2">
+                <h1 class="c-script-font c-display-e">Coding Samples</h1>
+            </div>
+        </section>
+        
+        <footer class="c-p-1 c-alt-bg c-text-light c-text-center">
+            <div class="c-p-1">
+                <nav>
+                    <ul class="c-buttons c-buttons-width-auto c-buttons-clear-light c-buttons-uppercase">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pages/coding.html">Coding</a></li>
+                        <li><a href="pages/writing.html">Writing</a></li>
+                        <li><a href="pages/resume.html">Resume</a></li>
+                        <li><a href="pages/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
 
+            <div class="c-p-1 box-main-headline">
+                <h1 class="c-script-font">Alex McFarland</h1>
+            </div>
+            <div class="footer__contact">
+                <p class="c-lead-xl"><strong>Phone: </strong><a href="tel:401-742-9194">(401)741-9194</a> | <strong>Email: </strong><a href="mailto:acgouveia5@gmail.com">acgouveia5@gmail.com</a></p>
+            </div>
+        </footer>
+
+        <script type="text/javascript">
+
+            //whole box clickable
+            [].forEach.call(document.querySelectorAll('.js__wbc'), function(el) {
+                el.addEventListener('click', function() {
+                    window.location = el.querySelector('a').getAttribute('href');
+                    return false;
+                });
+            });
+
+            //sticky header
+
+            var nav = document.querySelector('.js-nav');
+            var body = document.querySelector('body');
+            var paddingNext = document.querySelector('.js-sticky-next');
+            var stickyNavHeight = nav.offsetHeight;
+            var stickyNavTop = nav.offsetTop;
+
+            function stickyNav() {
+                if (window.pageYOffset > stickyNavTop) {
+                    nav.classList.add('is-sticky');
+                    paddingNext.style.paddingTop = stickyNavHeight + 'px';
+                } else {
+                    nav.classList.remove('is-sticky');
+                    paddingNext.style.paddingTop = 0;
+                }
+            }
+
+            stickyNav();
+            window.addEventListener('scroll', stickyNav, false, { passive: true } );
+
+
+            var menuBar = document.querySelector('.menu-bar');
+            var menuLinks = document.querySelectorAll('.menu-bar li');
+            var firstLink = document.querySelector('.menu-bar .first-link');
+            var linkHeight = firstLink.scrollHeight;
+
+            function setLinkHeights() {
+                Array.prototype.forEach.call( menuLinks, function( link ) {
+                    var linkHeight = link.scrollHeight;
+                    link.style.maxHeight = linkHeight + 'px';
+                });
+            }
+            function removeLinkHeights() {
+                Array.prototype.forEach.call( menuLinks, function( link ) {
+                    link.style.maxHeight = null;
+                });
+            }
+
+            menuBar.addEventListener('click', function(e) {
+                e.preventDefault;
+                menuBar.classList.toggle('opened');
+                if (menuBar.classList.contains("opened")) {
+                    setLinkHeights();
+                } else {
+                    removeLinkHeights();
+                    firstLink.style.maxHeight = linkHeight + 'px';
+
+                }
+            });
+            window.addEventListener('resize', function(){
+                menuBar.classList.remove('opened');
+                firstLink.style.maxHeight = linkHeight + 'px';
+            });
+            window.addEventListener('load', function(){
+                menuBar.classList.remove('opened');
+                firstLink.style.maxHeight = linkHeight + 'px';
+            });
+
+
+
+            //resource hovers
+            var resources = document.getElementsByClassName('js-top__box');
+
+            var timeout = false; // holder for timeout id
+            var delay = 240;
+
+            function resourceHovers() {
+
+                //if resource hover should be available
+                Array.prototype.forEach.call(resources, function (resource) {
+                    var description = resource.querySelector(".js-top__headline__info");
+                    var sectionHeight = description.scrollHeight;
+
+                    //display description
+                    function toggleHeightUp() {
+                        description.style.maxHeight = sectionHeight + 'px';
+                    }
+
+                    //hide description
+                    function toggleHeightDown() {
+                        description.style.maxHeight = null;
+                    }
+
+                    function checkMatchMedia() {
+                        //check window size
+                        if (window.matchMedia("(min-width: 768px)").matches) {
+
+                            resource.addEventListener('mouseenter', toggleHeightUp, false);
+                            resource.addEventListener('mouseleave', toggleHeightDown, false);
+
+                        } else {
+                            resource.removeEventListener('mouseenter', toggleHeightUp, false);
+                            resource.removeEventListener('mouseleave', toggleHeightDown, false);
+
+                        }
+                    }
+                    checkMatchMedia();
+                    window.addEventListener("resize", checkMatchMedia, false);
+                });
+            }
+
+            resourceHovers();
+
+            //debouncing resourceHovers on resize
+            window.addEventListener("resize", function() {
+                // clear the timeout
+                clearTimeout(timeout);
+
+                // start timing for event "completion"
+                timeout = setTimeout(resourceHovers, delay);
+            }, false);
+
+            //check if item is in the viewport
+            var isInViewport = function (elem) {
+                var bounding = elem.getBoundingClientRect();
+                var documentBody = document.querySelector('body');
+                var browserWidth = window.innerWidth;
+                var browserHeight = window.innerHeight;
+
+                return (
+                    bounding.top - (2 * browserHeight/3 + 50) <= 0
+                );
+            };
+
+            //check if section is in viewport
+            var onSectionArrive = function() {
+                var animatedSections = document.querySelectorAll('.js-visible');
+
+                Array.prototype.forEach.call(animatedSections, function(animatedSection){
+                    if (isInViewport(animatedSection)) {
+                        animatedSection.classList.add('is-visible');
+                    }
+                });
+            };
+            onSectionArrive();
+            window.addEventListener('scroll', onSectionArrive);
+        </script>
+    </body>
+</html>
