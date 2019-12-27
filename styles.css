@@ -3773,6 +3773,8 @@ html {
     }
     .c-sticky-nav ul li a {
         text-align: left;
+        display: inline-block;
+        width: auto;
     }
     .c-sticky-nav ul {
         position: relative;
@@ -3788,6 +3790,7 @@ html {
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
+        background-image: url('/icons/material/chevron-down/fff');
         transition: transform 0.33s ease-in-out;
     }
     .c-sticky-nav ul.opened:after {
