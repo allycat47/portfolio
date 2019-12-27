@@ -3762,7 +3762,7 @@ html {
 }
 
 @media screen and (max-width: 768px) {
-    .c-sticky-nav .nav {
+    .c-sticky-nav nav {
         position: relative;
         display: block;
         height: 100%;
