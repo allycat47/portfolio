@@ -252,12 +252,12 @@
                 Array.prototype.forEach.call( menuLinks, function( link ) {
                     var linkHeight = link.scrollHeight;
                     link.style.maxHeight = linkHeight + 'px';
-                }
+                });
             }
             function removeLinkHeights() {
                 Array.prototype.forEach.call( menuLinks, function( link ) {
                     link.style.maxHeight = null;
-                }
+                });
             }
 
             menuBar.addEventListener('click', function(e) {
