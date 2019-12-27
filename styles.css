@@ -3540,6 +3540,9 @@ html {
     left: 0;
     z-index: 11;
 }
+.box-contact .box-contact__img {
+    min-height: 250px;
+}
 
 @media screen and (min-width: 768px) {
     .c-sticky-nav ul .first-link {
@@ -3589,6 +3592,12 @@ html {
     .box-extras__box-headline h2 {
         writing-mode: vertical-lr;
         text-orientation: sideways-right;
+    }
+    .box-contact {
+        padding-top: 6rem;
+    }
+    .box-contact__info {
+        margin-top: 6rem;
     }
     .box-contact__info .c-lead {
         padding-left: 10px;
@@ -3772,6 +3781,7 @@ html {
         text-align: left;
         height: 100%;
         top: 0;
+        right: 0;
     }
     .c-sticky-nav ul li {
         max-height: 0;
