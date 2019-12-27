@@ -262,13 +262,20 @@
             });
 
             Array.prototype.forEach.call( menuLinks, function( link ) {
-                var thisLinkHeight = link.parentNode.scrollHeight;
                 link.addEventListener('click', function(e) {
                     e.preventDefault;
-                    Array.prototype.forEach.call( menuLinks, function( deadlinks ) {
-                        deadlinks.parentNode.style.maxHeight = null;
-                    })
-                    link.parentNode.style.maxHeight = thisLinkHeight + 'px';
+                    if (menuBar.classList.contains("opened")) {
+                        Array.prototype.forEach.call( menuLinks, function( deadlinks ) {
+                            deadlinks.parentNode.style.maxHeight = null;
+                        });
+                        link.parentNode.style.maxHeight = thisLinkHeight + 'px';
+                    } else {
+                        Array.prototype.forEach.call( menuLinks, function( livelinks ) {
+                            var thisLinkHeight = livelinks.scrollHeight;
+                            livelinks.parentNode.style.maxHeight = thisLinkHeight + 'px';
+                        });
+                    }
+                    
                 });
             });
 
