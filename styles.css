@@ -3762,6 +3762,17 @@ html {
 }
 
 @media screen and (max-width: 768px) {
+    .c-sticky-nav .nav {
+        position: relative;
+        display: block;
+        height: 100%;
+    }
+    .c-sticky-nav ul {
+        position: absolute;
+        text-align: left;
+        height: 100%;
+        top: 0;
+    }
     .c-sticky-nav ul li {
         max-height: 0;
         overflow: hidden;
@@ -3776,10 +3787,7 @@ html {
         display: inline-block;
         width: auto;
     }
-    .c-sticky-nav ul {
-        position: relative;
-        text-align: left;
-    }
+    
     .c-sticky-nav ul:after {
         content: "";
         position: absolute;
