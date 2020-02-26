@@ -225,6 +225,9 @@ body, iframe, form{
 .c-text-left {
     text-align: left;
 }
+.c-block {
+    display: block;
+}
 
 /* Separators */
 
@@ -3605,6 +3608,9 @@ html {
     .box-contact__info .c-lead:before {
         left: -5rem;
     }
+    .main__holder {
+        min-height: calc(100vh - 14rem);
+    }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
     .box-about__img {
@@ -3798,7 +3804,7 @@ html {
         display: inline-block;
         width: auto;
     }
-    
+
     .c-sticky-nav ul:after {
         content: "";
         position: absolute;
