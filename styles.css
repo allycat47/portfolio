@@ -3609,7 +3609,7 @@ html {
         left: -5rem;
     }
     .main__holder {
-        min-height: calc(80vh - 14rem);
+        min-height: calc(100vh - 14rem);
     }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
