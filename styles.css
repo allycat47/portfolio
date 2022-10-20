@@ -3879,11 +3879,11 @@ header a.h1 {
   position: relative;
   z-index: 30;
 }
-.box-toggles .dak-tabs__list {
+.box-toggles .c-tabs__list {
   max-width: 1100px;
   margin: 0 auto;
 }
-.box-toggles .dak-tabs__item {
+.box-toggles .c-tabs__item {
   max-width: 200px;
   background: #02376a;
   text-align: center;
@@ -3891,6 +3891,6 @@ header a.h1 {
   margin-top: -55px;
   letter-spacing: 2px;
 }
-.box-toggles .dak-tabs__item.is-active {
+.box-toggles .c-tabs__item.is-active {
   background: #000;
 }
