@@ -3684,6 +3684,9 @@ html {
         margin-bottom: 1rem;
     }
     /* Animations */
+    .js-visible {
+    overflow: hidden;
+  }
     .box-extras__box-headline,
     .box-top__box-1 {
         transition: all 0.75s ease-in-out;
