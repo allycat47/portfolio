@@ -259,14 +259,14 @@
     this.tabContainerList = tabContainer.querySelector(".c-js-tabs__list");
     this.tabContainerButton = tabContainer.querySelectorAll(".c-js-tabs__item");
     this.tabContainerPanel = tabContainer.querySelectorAll(".c-js-tabs__panel");
-    this.tabContainerPanelPrimary = tabContainer.querySelector(".js-tabs__panel-primary");
+    this.tabContainerPanelPrimaryHeight = tabContainer.querySelector(".js-tabs__panel-primary").offsetHeight;
     this.tabContainerArrow = tabContainer.querySelector(".c-js-tab__btn");
     this.currentActive = tabContainer.querySelector(".is-active");
   
     const thistabContainer = this.tabContainerList;
     const thisTabs = this.tabContainerButton;
     const thisTabPanels = this.tabContainerPanel;
-    const thisTabPanelPrimary = this.tabContainerPanelPrimary;
+    const thisTabPanelPrimaryHeight = this.tabContainerPanelPrimaryHeight;
     const thisTabArrow = this.tabContainerArrow;
     const currentActive = this.currentActive;
   
@@ -285,8 +285,7 @@
         });
         Array.prototype.forEach.call( thisTabPanels, function( thisTabPanel ) {
           thisTabPanel.setAttribute("role", "tabpanel");
-          console.log(thisTabPanelPrimary);
-          thisTabPanel.style.height = thisTabPanelPrimary.offsetHeight;
+          thisTabPanel.style.height = thisTabPanelPrimaryHeight + 'px';
         });
       },
       setTabContentActive: function(e) {
