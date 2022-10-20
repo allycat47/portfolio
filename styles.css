@@ -3901,3 +3901,9 @@ header a.h1 {
 .c-tabs__panel .c-button {
   margin-top: 2rem;
 }
+
+@media screen and (min-width: 768px) {
+  .box-toggles .c-tabs__item {
+    font-size: 1.3rem;
+  }
+}
