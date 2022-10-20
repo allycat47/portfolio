@@ -47,9 +47,9 @@
           Contact
         </button>
       </div>
-      <div class="c-py-4 c-px-1 c-tabs__panel c-js-tabs__panel is-active" id="tab-one">
+      <div class="c-py-4 c-px-1 c-tabs__panel c-js-tabs__panel js-tabs__panel-primary is-active" id="tab-one">
         <div class="c-contain-md">
-          <h2 class="c-display-d c-main-text">About</h2>
+          <h2 class="c-display-a c-main-text">About</h2>
           <p>Hey there! Name's Alex. I'm a front-end web developer who also dabbles in web design and writing. I graduated from the University of Rhode Island in 2011 and have spent my days since then honing my web development skills (and poking at this admittedly sad and somewhat dated website. Apologies).</p>
           <p>I currently work as a web developer for a real estate marketing company. I'm part front-end dev (coding fancy sites, etc). and part back-end dev (updating and improving our custom CMS/CRM).</p>
           
@@ -259,12 +259,14 @@
     this.tabContainerList = tabContainer.querySelector(".c-js-tabs__list");
     this.tabContainerButton = tabContainer.querySelectorAll(".c-js-tabs__item");
     this.tabContainerPanel = tabContainer.querySelectorAll(".c-js-tabs__panel");
+    this.tabContainerPanelPrimary = tabContainer.querySelector(".c-js-tabs__panel-primary");
     this.tabContainerArrow = tabContainer.querySelector(".c-js-tab__btn");
     this.currentActive = tabContainer.querySelector(".is-active");
   
     const thistabContainer = this.tabContainerList;
     const thisTabs = this.tabContainerButton;
     const thisTabPanels = this.tabContainerPanel;
+    const thisTabPanelPrimary = this.tabContainerPanelPrimary;
     const thisTabArrow = this.tabContainerArrow;
     const currentActive = this.currentActive;
   
@@ -283,6 +285,7 @@
         });
         Array.prototype.forEach.call( thisTabPanels, function( thisTabPanel ) {
           thisTabPanel.setAttribute("role", "tabpanel");
+          thisTabPanel.style.height = thisTabPanelPrimary.offsetHeight;
         });
       },
       setTabContentActive: function(e) {
