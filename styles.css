@@ -3486,6 +3486,9 @@ html {
   float: none;
 }
 /* Sticky Nav */
+header a.h1 {
+  margin : 0;
+}
 .c-sticky-nav.is-sticky {
   position: fixed;
   left: 0;
