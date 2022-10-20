@@ -285,7 +285,7 @@
         });
         Array.prototype.forEach.call( thisTabPanels, function( thisTabPanel ) {
           thisTabPanel.setAttribute("role", "tabpanel");
-          thisTabPanel.style.height = thisTabPanelPrimaryHeight + 'px';
+          thisTabPanel.style.minHeight = thisTabPanelPrimaryHeight + 'px';
         });
       },
       setTabContentActive: function(e) {
