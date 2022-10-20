@@ -3887,16 +3887,16 @@ header a.h1 {
 }
 .box-toggles .c-tabs__item {
   max-width: 200px;
-  background: #02376a;
+  background: #000;
   text-align: center;
   font-weight: 600;
   margin-top: -61px;
   letter-spacing: 2px;
-  border: 1px solid #000;
+  border: 1px solid #02376a;
   font-family: 'Nunito',Verdana,Geneva,'Bitstream Vera Sans','DejaVu Sans',sans-serif;
 }
 .box-toggles .c-tabs__item.is-active {
-  background: #000;
+  background: #02376a;
 }
 .c-tabs__panel .c-button {
   margin-top: 2rem;
