@@ -484,6 +484,9 @@ body, iframe, form{
 .c-bg-alt {
   background-color: #6d8113;
 }
+.c-black-bg {
+  background-color: #000;
+}
 .c-bg-image,
 .c-image-bg,
 .c-bg-dark-medium,
@@ -3888,7 +3891,7 @@ header a.h1 {
   background: #02376a;
   text-align: center;
   font-weight: 600;
-  margin-top: -55px;
+  margin-top: -61px;
   letter-spacing: 2px;
 }
 .box-toggles .c-tabs__item.is-active {
